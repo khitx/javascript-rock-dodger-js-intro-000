@@ -125,13 +125,13 @@ function endGame() {
     }
   }
 */
+while (ROCKS.length > 0) {
+  ROCKS.pop()
+}
   //console.log('remove rocks:')
   while (document.querySelector('.rock')) {
     //console.log(document.querySelector('.rock'))
     document.querySelector('.rock').remove()
-  }
-  while (ROCKS.length > 0) {
-    ROCKS.pop()
   }
 
 //  while(clRock[0]) {
