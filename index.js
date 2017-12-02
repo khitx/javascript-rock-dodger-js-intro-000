@@ -39,8 +39,8 @@ function checkCollision(rock) {
             //console.log(document.querySelector(`[attribute~=left: ${rockLeftEdge}px]`))
             console.log('remove:')
             console.log(document.querySelector('.rock'))
-            console.log(document.querySelector('.rock').remove())
-            //document.querySelector('.rock').remove()
+            //console.log(document.querySelector('.rock').remove())
+            document.querySelector('.rock').remove()
             ROCKS.pop(rock)
             return false
       }
