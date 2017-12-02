@@ -80,7 +80,7 @@ function endGame() {
 
   //spies.push(expect.spyOn(rock, 'remove'))
   while (document.querySelector('.rock')) {
-    var el = querySelector('.rock')
+    var el = document.querySelector('.rock')
     el.remove()
   }
 /*
