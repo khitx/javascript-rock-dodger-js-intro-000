@@ -22,8 +22,8 @@ function checkCollision(rock) {
        (rockLeftEdge >= dodgerLeftEdge & rockRightEdge <= dodgerRightEdge) ||
        (rockLeftEdge < dodgerRightEdge & rockRightEdge > dodgerRightEdge))
           {
-            console.log(`dodger: ${dodgerLeftEdge} - ${dodgerRightEdge}`)
-            console.log(`rock: ${rockLeftEdge} - ${rockRightEdge}`)
+            //console.log(`dodger: ${dodgerLeftEdge} - ${dodgerRightEdge}`)
+            //console.log(`rock: ${rockLeftEdge} - ${rockRightEdge}`)
             return true }
     else  {
       if (top === 400) {
@@ -37,8 +37,8 @@ function checkCollision(rock) {
             //ROCKS.pop()
             //console.log(document.querySelector(`style=[left\: ${rockLeftEdge}px]`))
             //console.log(document.querySelector(`[attribute~=left: ${rockLeftEdge}px]`))
-            console.log('remove:')
-            console.log(document.querySelector('.rock'))
+            //console.log('remove:')
+            //console.log(document.querySelector('.rock'))
             //**console.log(document.querySelector('.rock').remove())
             document.querySelector('.rock').remove()
             ROCKS.pop(rock)
@@ -71,8 +71,8 @@ function createRock(x) {
   window.requestAnimationFrame(moveRock)
   ROCKS.push(rock)
   var lgth = ROCKS.length
-  console.log('ROCKS.push')
-  console.log(ROCKS[lgth - 1])
+  //console.log('ROCKS.push')
+  //console.log(ROCKS[lgth - 1])
   return rock
 
   function moveRock() {
@@ -130,7 +130,7 @@ function endGame() {
   }
 */
   while (document.querySelector('.rock')) {
-    console.log(document.querySelector('.rock'))
+    //console.log(document.querySelector('.rock'))
     document.querySelector('.rock').remove()
   }
 
