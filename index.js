@@ -111,10 +111,6 @@ function endGame() {
   //gameInterval = clearInterval(createRock)
   clearInterval(gameInterval)
 
-  while (ROCKS.length > 0) {
-    ROCKS.pop()
-  }
-
 /*  var clRock = document.getElementsByClassName('rock')
 
   while(clRock[0]) {
@@ -133,6 +129,9 @@ function endGame() {
   while (document.querySelector('.rock')) {
     //console.log(document.querySelector('.rock'))
     document.querySelector('.rock').remove()
+  }
+  while (ROCKS.length > 0) {
+    ROCKS.pop()
   }
 
 //  while(clRock[0]) {
