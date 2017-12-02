@@ -129,11 +129,11 @@ function endGame() {
     }
   }
 */
-//  console.log('remove rocks:')
-  //while (document.querySelector('.rock')) {
-    //console.log(document.querySelector('.rock'))
-    //document.querySelector('.rock').remove()
-  //}
+  console.log('remove rocks:')
+  while (document.querySelector('.rock')) {
+    console.log(document.querySelector('.rock'))
+    document.querySelector('.rock').remove()
+  }
 
 //  while(clRock[0]) {
 //      console.log(clRock[0].parentNode.removeChild(clRock[0]))
