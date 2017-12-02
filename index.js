@@ -133,7 +133,7 @@ while (ROCKS.length > 0) {
     //console.log(document.querySelector('.rock'))
   //  document.querySelector('.rock').remove()
   //}
-  var cnt = document.querySelector('.rock').length
+  var cnt = document.querySelectorAll('.rock').length
 
 //  while(clRock[0]) {
 //      console.log(clRock[0].parentNode.removeChild(clRock[0]))
