@@ -129,10 +129,10 @@ function endGame() {
     }
   }
 */
-//  while (document.querySelector('.rock')) {
-    //console.log(document.querySelector('.rock'))
+  while (document.querySelector('.rock')) {
+    console.log(document.querySelector('.rock'))
     document.querySelector('.rock').remove()
-//  }
+  }
 
 //  while(clRock[0]) {
 //      console.log(clRock[0].parentNode.removeChild(clRock[0]))
