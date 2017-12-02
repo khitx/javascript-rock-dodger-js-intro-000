@@ -20,9 +20,9 @@ function checkCollision(rock) {
 
     if ((rockLeftEdge < dodgerLeftEdge & rockRightEdge > dodgerLeftEdge ) ||
        (rockLeftEdge >= dodgerLeftEdge & rockRightEdge <= dodgerRightEdge) ||
-       (rockLeftEdge < dodgerRightEdge & rockRightEdge > dodgerRightEdge))
-          {
-            return true }
+       (rockLeftEdge < dodgerRightEdge & rockRightEdge > dodgerRightEdge)) {
+         return true 
+    }
     else  {
       if (top === 400) {
             document.querySelector('.rock').remove()
@@ -65,33 +65,31 @@ function createRock(x) {
         if (topNumbers < 400) {
           window.requestAnimationFrame(moveRock)
         }
-        else {
-          //var clRock = document.getElementsByClassName('rock')
-        }
       }
     }
-  }
-}
+  } //function moveRock
+} //function createRock
 
 function endGame() {
   clearInterval(gameInterval)
 
-while (ROCKS.length > 0) {
-  ROCKS.pop()
-}
+  while (ROCKS.length > 0) {
+    ROCKS.pop()
+  }
 /*
   while (document.querySelector('.rock')) {
     document.querySelector('.rock').remove()
   }
 */
   var cnt = document.querySelectorAll('.rock').length
+  
   for (var i = 0; i < cnt; i++) {
     document.querySelector('.rock').remove()
   }
 
   window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
-    //document.location.reload()
+  //document.location.reload()
 }
 
 function moveDodger(e) {
@@ -105,7 +103,7 @@ function moveDodger(e) {
        e.preventDefault()
        e.stopPropagation()
      }
-}
+} //function moveDodger
 
 function moveDodgerLeft() {
    var leftNumbers = DODGER.style.left.replace('px', '')
@@ -117,7 +115,7 @@ function moveDodgerLeft() {
    if (left > 0){
      window.requestAnimationFrame(stepL)
    }
- }
+ } //function moveDodgerLeft 
 
 function moveDodgerRight() {
    var rightNumbers = DODGER.style.left.replace('px', '')
@@ -129,7 +127,7 @@ function moveDodgerRight() {
    if (right < 360){
      window.requestAnimationFrame(stepR)
    }
-}
+} //function moveDodgerRight
 
 /**
  * @param {string} p The position property
