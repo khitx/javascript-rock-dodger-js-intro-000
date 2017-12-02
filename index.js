@@ -22,24 +22,9 @@ function checkCollision(rock) {
        (rockLeftEdge >= dodgerLeftEdge & rockRightEdge <= dodgerRightEdge) ||
        (rockLeftEdge < dodgerRightEdge & rockRightEdge > dodgerRightEdge))
           {
-            //console.log(`dodger: ${dodgerLeftEdge} - ${dodgerRightEdge}`)
-            //console.log(`rock: ${rockLeftEdge} - ${rockRightEdge}`)
             return true }
     else  {
       if (top === 400) {
-            //console.log(`rock: ${rockLeftEdge} - ${rockRightEdge} top: ${top}`)
-            //console.log(GAME.removeChild(rock))
-            //console.log('one')
-            //console.log(document.getElementsByClassName('rock').remove)
-            //console.log('two')
-            //console.log(document.getElementsByClassName('rock'))
-            //GAME.removeChild(rock)
-            //ROCKS.pop()
-            //console.log(document.querySelector(`style=[left\: ${rockLeftEdge}px]`))
-            //console.log(document.querySelector(`[attribute~=left: ${rockLeftEdge}px]`))
-            //console.log('remove:')
-            //console.log(document.querySelector('.rock'))
-            //console.log(document.querySelector('.rock').remove())
             document.querySelector('.rock').remove()
             ROCKS.pop(rock)
             return false
@@ -60,19 +45,13 @@ function createRock(x) {
   var top = 0
 
   rock.style.top = top
-  //GAME.appendChild(rock)
-  //**console.log('append:')
-  //**console.log(GAME.appendChild(rock))
   GAME.appendChild(rock)
-  //console.log(`rock: ${rock}`)
   moveRock()
   var topNumbers = rock.style.top.replace('px', '')
 
   window.requestAnimationFrame(moveRock)
   ROCKS.push(rock)
   var lgth = ROCKS.length
-  //console.log('ROCKS.push')
-  //console.log(ROCKS[lgth - 1])
   return rock
 
   function moveRock() {
@@ -87,19 +66,7 @@ function createRock(x) {
           window.requestAnimationFrame(moveRock)
         }
         else {
-          //console.log('this never executes 2')
-          //GAME.removeChild(rock)
-          var clRock = document.getElementsByClassName('rock')
-          //while(clRock[0]) {
-            //if (clRock[0] === null) {
-              //console.log('should never hit this code')
-            //}
-            //else {
-              //console.log(clRock[0])
-              //**clRock[0].parentNode.removeChild(clRock[0])
-              //console.log(clRock[0])
-            //}
-          //}
+          //var clRock = document.getElementsByClassName('rock')
         }
       }
     }
@@ -107,45 +74,24 @@ function createRock(x) {
 }
 
 function endGame() {
-  //gameInterval = clearInterval(gameInterval)
-  //gameInterval = clearInterval(createRock)
   clearInterval(gameInterval)
 
-/*  var clRock = document.getElementsByClassName('rock')
-
-  while(clRock[0]) {
-    if (clRock[0] === null) {
-      console.log('should never hit this code')
-    }
-    else {
-      //console.log(clRock[0])
-      //console.log(clRock[0].parentNode.removeChild(clRock[0]))
-      clRock[0].parentNode.removeChild(clRock[0])
-      //console.log(clRock[0])
-    }
-  }
-*/
 while (ROCKS.length > 0) {
   ROCKS.pop()
 }
-  //console.log('remove rocks:')
-//  while (document.querySelector('.rock')) {
-    //console.log(document.querySelector('.rock'))
-  //  document.querySelector('.rock').remove()
-  //}
+/*
+  while (document.querySelector('.rock')) {
+    document.querySelector('.rock').remove()
+  }
+*/
   var cnt = document.querySelectorAll('.rock').length
   for (var i = 0; i < cnt; i++) {
     document.querySelector('.rock').remove()
   }
-//  while(clRock[0]) {
-//      console.log(clRock[0].parentNode.removeChild(clRock[0]))
-//  }
 
   window.removeEventListener('keydown', moveDodger)
-  //alert('YOU LOSE!')
-  console.log('you lose')
-  //done()
-  //document.location.reload()
+  alert('YOU LOSE!')
+    //document.location.reload()
 }
 
 function moveDodger(e) {
