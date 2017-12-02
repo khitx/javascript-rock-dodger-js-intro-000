@@ -111,9 +111,9 @@ function endGame() {
   //gameInterval = clearInterval(createRock)
   clearInterval(gameInterval)
 
-//  while (ROCKS.length > 0) {
-//    ROCKS.pop()
-//  }
+  while (ROCKS.length > 0) {
+    ROCKS.pop()
+  }
 
 /*  var clRock = document.getElementsByClassName('rock')
 
