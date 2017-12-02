@@ -139,10 +139,10 @@ function endGame() {
 //  }
 
   window.removeEventListener('keydown', moveDodger)
-  //**alert('YOU LOSE!')
-  console.log('you lose')
+  alert('YOU LOSE!')
+  //console.log('you lose')
   //done()
-  //**document.location.reload()
+  document.location.reload()
 }
 
 function moveDodger(e) {
