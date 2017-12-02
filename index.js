@@ -21,7 +21,7 @@ function checkCollision(rock) {
     if ((rockLeftEdge < dodgerLeftEdge & rockRightEdge > dodgerLeftEdge ) ||
        (rockLeftEdge >= dodgerLeftEdge & rockRightEdge <= dodgerRightEdge) ||
        (rockLeftEdge < dodgerRightEdge & rockRightEdge > dodgerRightEdge)) {
-         return true 
+         return true
     }
     else  {
       if (top === 400) {
@@ -82,7 +82,7 @@ function endGame() {
   }
 */
   var cnt = document.querySelectorAll('.rock').length
-  
+
   for (var i = 0; i < cnt; i++) {
     document.querySelector('.rock').remove()
   }
@@ -115,7 +115,7 @@ function moveDodgerLeft() {
    if (left > 0){
      window.requestAnimationFrame(stepL)
    }
- } //function moveDodgerLeft 
+ } //function moveDodgerLeft
 
 function moveDodgerRight() {
    var rightNumbers = DODGER.style.left.replace('px', '')
