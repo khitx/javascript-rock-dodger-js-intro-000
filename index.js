@@ -37,8 +37,8 @@ function checkCollision(rock) {
             //ROCKS.pop()
             //console.log(document.querySelector(`style=[left\: ${rockLeftEdge}px]`))
             //console.log(document.querySelector(`[attribute~=left: ${rockLeftEdge}px]`))
-            console.log('remove:')
-            console.log(document.querySelector('.rock'))
+            //console.log('remove:')
+            //console.log(document.querySelector('.rock'))
             //console.log(document.querySelector('.rock').remove())
             document.querySelector('.rock').remove()
             ROCKS.pop(rock)
@@ -129,9 +129,9 @@ function endGame() {
     }
   }
 */
-  console.log('remove rocks:')
+  //console.log('remove rocks:')
   while (document.querySelector('.rock')) {
-    console.log(document.querySelector('.rock'))
+    //console.log(document.querySelector('.rock'))
     document.querySelector('.rock').remove()
   }
 
