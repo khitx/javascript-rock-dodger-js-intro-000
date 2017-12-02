@@ -77,17 +77,23 @@ function endGame() {
   while (ROCKS.length > 0) {
     ROCKS.pop()
   }
+
+  //spies.push(expect.spyOn(rock, 'remove'))
+  while (document.querySelector('.rock')) {
+    var el = querySelector('.rock')
+    el.remove()
+  }
 /*
   while (document.querySelector('.rock')) {
     document.querySelector('.rock').remove()
   }
 */
+/*
   var cnt = document.querySelectorAll('.rock').length
-//spies.push(expect.spyOn(rock, 'remove'))
   for (var i = 0; i < cnt; i++) {
     document.querySelector('.rock').remove()
   }
-
+*/
   //window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
   //document.location.reload()
