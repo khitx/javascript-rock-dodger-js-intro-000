@@ -131,7 +131,7 @@ function endGame() {
 */
 //  while (document.querySelector('.rock')) {
     //console.log(document.querySelector('.rock'))
-    document.querySelector('.rock').remove()
+//    document.querySelector('.rock').remove()
 //  }
 
 //  while(clRock[0]) {
