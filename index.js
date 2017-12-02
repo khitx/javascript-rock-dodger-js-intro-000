@@ -133,10 +133,10 @@ while (ROCKS.length > 0) {
     //console.log(document.querySelector('.rock'))
   //  document.querySelector('.rock').remove()
   //}
-  //var cnt = document.querySelectorAll('.rock').length
-  //for (var i = 0; i < cnt; i++) {
-    document.querySelectorAll('.rock').remove()
-  //}
+  var cnt = document.querySelectorAll('.rock').length
+  for (var i = 0; i < cnt; i++) {
+    document.querySelector('.rock').remove()
+  }
 //  while(clRock[0]) {
 //      console.log(clRock[0].parentNode.removeChild(clRock[0]))
 //  }
