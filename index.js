@@ -63,7 +63,7 @@ function createRock(x) {
   //GAME.appendChild(rock)
   //**console.log('append:')
   //**console.log(GAME.appendChild(rock))
-  //GAME.appendChild(rock)
+  GAME.appendChild(rock)
   //console.log(`rock: ${rock}`)
   moveRock()
   var topNumbers = rock.style.top.replace('px', '')
