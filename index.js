@@ -83,7 +83,7 @@ function endGame() {
   }
 */
   var cnt = document.querySelectorAll('.rock').length
-
+//spies.push(expect.spyOn(rock, 'remove'))
   for (var i = 0; i < cnt; i++) {
     document.querySelector('.rock').remove()
   }
