@@ -72,6 +72,7 @@ function createRock(x) {
 
 function endGame() {
   clearInterval(gameInterval)
+  window.removeEventListener('keydown', moveDodger)
 
   while (ROCKS.length > 0) {
     ROCKS.pop()
@@ -87,7 +88,7 @@ function endGame() {
     document.querySelector('.rock').remove()
   }
 
-  window.removeEventListener('keydown', moveDodger)
+  //window.removeEventListener('keydown', moveDodger)
   alert('YOU LOSE!')
   //document.location.reload()
 }
