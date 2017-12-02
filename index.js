@@ -37,10 +37,10 @@ function checkCollision(rock) {
             //ROCKS.pop()
             //console.log(document.querySelector(`style=[left\: ${rockLeftEdge}px]`))
             //console.log(document.querySelector(`[attribute~=left: ${rockLeftEdge}px]`))
-            //console.log('remove:')
-            //console.log(document.querySelector('.rock'))
-            //**console.log(document.querySelector('.rock').remove())
-            document.querySelector('.rock').remove()
+            console.log('remove:')
+            console.log(document.querySelector('.rock'))
+            console.log(document.querySelector('.rock').remove())
+            //document.querySelector('.rock').remove()
             ROCKS.pop(rock)
             return false
       }
@@ -61,9 +61,9 @@ function createRock(x) {
 
   rock.style.top = top
   //GAME.appendChild(rock)
-  //**console.log('appendChild')
-  //**console.log(GAME.appendChild(rock))
-  GAME.appendChild(rock)
+  console.log('append:')
+  console.log(GAME.appendChild(rock))
+  //GAME.appendChild(rock)
   //console.log(`rock: ${rock}`)
   moveRock()
   var topNumbers = rock.style.top.replace('px', '')
@@ -129,6 +129,7 @@ function endGame() {
     }
   }
 */
+  console.log('remove rocks:')
   while (document.querySelector('.rock')) {
     console.log(document.querySelector('.rock'))
     document.querySelector('.rock').remove()
