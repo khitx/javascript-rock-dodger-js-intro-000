@@ -107,8 +107,8 @@ function createRock(x) {
 }
 
 function endGame() {
-  gameInterval = clearInterval(gameInterval)
-  gameInterval = clearInterval(createRock)
+  //gameInterval = clearInterval(gameInterval)
+  //gameInterval = clearInterval(createRock)
   clearInterval(gameInterval)
 
 //  while (ROCKS.length > 0) {
