@@ -61,8 +61,8 @@ function createRock(x) {
 
   rock.style.top = top
   //GAME.appendChild(rock)
-  console.log('append:')
-  console.log(GAME.appendChild(rock))
+  //**console.log('append:')
+  //**console.log(GAME.appendChild(rock))
   //GAME.appendChild(rock)
   //console.log(`rock: ${rock}`)
   moveRock()
